@@ -159,7 +159,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/12/21/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">我的第一篇博客文章</a>
+      <a class="article-title" href="/2021/12/21/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">如何搭建博客</a>
     </h1>
   
 
@@ -172,12 +172,26 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>第一章</p>
-<p>内容</p>
-<p>第二章</p>
-<p>内容</p>
-<p>第三章</p>
-<p>内容</p>
+        <p>#Hexo框架搭建博客<br>##第一步：<br>先下载<code>node.js</code>安装<code>npm</code></p>
+<p>##第二步：<br>下载安装<code>git</code>,一系列操作将在<code>git Bash</code>终端进行操作</p>
+<p>##第三步：<br>查看<code>node.js</code>版本<code>node -v</code>,其余查看版本操作类似</p>
+<p>安装<code>cnpm</code>:</p>
+<p><code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code>使用淘宝镜像，提高下载速度</p>
+<p>安装<code>hexo</code>:</p>
+<p><code>cnpm install -g hexo-cli</code></p>
+<p>创建博客文件夹：</p>
+<p><code>mkdir blog</code></p>
+<p>初始化一个博客：</p>
+<p><code>hexo init</code></p>
+<p><code>hexo</code>的一些操作：</p>
+<p><code>hexo s</code>:启动博客</p>
+<p><code>hexo clean</code>:清除缓存</p>
+<p><code>hexo g</code>:生成</p>
+<p><code>hexo d</code>:部署</p>
+<p>##第四步：<br>在<code>github</code>创建仓库，将地址写入文件<code>._config.yml</code>的最后。然后<br><code>hexo clean</code>，<code>hexo g</code>，<code>hexo d</code>三部操作即可</p>
+<p>##第五步：<br>换个别人的主题：<br><code>git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia </code></p>
+<p>在文件<code>._config.yml</code>的<code>theme</code>处改成<code>yilia</code>即可</p>
+<p>###至此一个<code>Hexo</code>框架搭建的博客就可以使用并访问了</p>
 
       
 
